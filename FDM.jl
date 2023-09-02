@@ -67,8 +67,8 @@ elseif potential_choice == 7
     V_function = x -> Potentials.morse_potential(x, D, a, re)
 end
 # Let's enter the boundaries of our system
-a = -6;
-b = 6;
+a = 0.0001;
+b = 1;
 N = 5000;
 # Let's create our grid of points: h will be the step of the range, i.e. our shortest distance 
 x = range(a, stop=b, length=N);
